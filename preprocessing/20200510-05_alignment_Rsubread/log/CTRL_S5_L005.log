@@ -1,0 +1,258 @@
+[1] "en_US.utf8"
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+|| Function      : Read alignment + Junction detection (RNA-Seq)              ||
+|| Input file    : CTRL_S5_L005_trimmed.fq.gz                                 ||
+|| Output file   : CTRL_S5_L005.bam (BAM), Sorted                             ||
+|| Index name    : GRCm38                                                     ||
+||                                                                            ||
+||                    ------------------------------------                    ||
+||                                                                            ||
+||                               Threads : 21                                 ||
+||                          Phred offset : 33                                 ||
+||                             Min votes : 1 / 14                             ||
+||                        Max mismatches : 2                                  ||
+||                      Max indel length : 2                                  ||
+||            Report multi-mapping reads : yes                                ||
+|| Max alignments per multi-mapping read : 1                                  ||
+||                           Annotations : gencode.vM18.chr_patch_hapl_sc ... ||
+||                                                                            ||
+\\============================================================================//
+
+//================= Running (06-Oct-2020 14:59:11, pid=8347) =================\\
+||                                                                            ||
+|| Check the input reads.                                                     ||
+|| The input file contains base space reads.                                  ||
+|| Initialise the memory objects.                                             ||
+|| Estimate the mean read length.                                             ||
+|| The range of Phred scores observed in the data is [13,38]                  ||
+|| Create the output BAM file.                                                ||
+|| Check the index.                                                           ||
+|| Init the voting space.                                                     ||
+|| Load the annotation file.                                                  ||
+|| 816722 annotation records were loaded.                                     ||
+||                                                                            ||
+|| Chromosomes/contigs in annotation but not in index :                       ||
+||    MG3618_PATCH                                                            ||
+||    MG3683_PATCH                                                            ||
+||    MG3714_PATCH                                                            ||
+||    MG4261_PATCH                                                            ||
+||    MG4308_PATCH                                                            ||
+||    MG3700_PATCH                                                            ||
+||    MG3627_PATCH                                                            ||
+||    MG51_PATCH                                                              ||
+||    MG4138_PATCH                                                            ||
+||    MG4214_PATCH                                                            ||
+||    MG104_PATCH                                                             ||
+||    WSB_EIJ_MMCHR11_CTG1                                                    ||
+||    MG3686_PATCH                                                            ||
+||    MG3712_PATCH                                                            ||
+||    MG4200_PATCH                                                            ||
+||    PWK_PHJ_MMCHR11_CTG1                                                    ||
+||    MG74_PATCH                                                              ||
+||    WSB_EIJ_MMCHR11_CTG2                                                    ||
+||    PWK_PHJ_MMCHR11_CTG2                                                    ||
+||    CAST_EI_MMCHR11_CTG4                                                    ||
+||    MG4243_PATCH                                                            ||
+||    MG209_PATCH                                                             ||
+||    MG3490_PATCH                                                            ||
+||    CAST_EI_MMCHR11_CTG5                                                    ||
+||    MG3648_PATCH                                                            ||
+||    MG89_PATCH                                                              ||
+||    WSB_EIJ_MMCHR11_CTG3                                                    ||
+||    PWK_PHJ_MMCHR11_CTG3                                                    ||
+||    MG4310_MG4311_PATCH                                                     ||
+||    MG3656_PATCH                                                            ||
+||    MG4198_PATCH                                                            ||
+||    MG3530_PATCH                                                            ||
+||                                                                            ||
+||                                                                            ||
+|| Chromosomes/contigs in index but not in annotation :                       ||
+||    GL456394.1                                                              ||
+||    GL456379.1                                                              ||
+||    GL456366.1                                                              ||
+||    GL456389.1                                                              ||
+||    GL456382.1                                                              ||
+||    JH584300.1                                                              ||
+||    GL456367.1                                                              ||
+||    GL456392.1                                                              ||
+||    GL456360.1                                                              ||
+||    KQ030493.1                                                              ||
+||    GL456396.1                                                              ||
+||    GL456383.1                                                              ||
+||    JH584301.1                                                              ||
+||    GL456370.1                                                              ||
+||    GL456387.1                                                              ||
+||    GL456368.1                                                              ||
+||    JH792831.1                                                              ||
+||    GL456393.1                                                              ||
+||    GL456378.1                                                              ||
+||    GL456359.1                                                              ||
+||    GL456213.1                                                              ||
+||    JH584302.1                                                              ||
+||    GL456390.1                                                              ||
+||                                                                            ||
+|| Global environment is initialised.                                         ||
+|| Load the 1-th index block...                                               ||
+|| The index block has been loaded.                                           ||
+|| Start read mapping in chunk.                                               ||
+||    0% completed, 1.7 mins elapsed, rate=40.9k reads per second             ||
+||    6% completed, 2.2 mins elapsed, rate=82.0k reads per second             ||
+||   11% completed, 2.7 mins elapsed, rate=30.0k reads per second             ||
+||   12% completed, 2.8 mins elapsed, rate=30.8k reads per second             ||
+||   12% completed, 2.8 mins elapsed, rate=31.5k reads per second             ||
+||   12% completed, 2.9 mins elapsed, rate=32.2k reads per second             ||
+||   13% completed, 2.9 mins elapsed, rate=32.9k reads per second             ||
+||   14% completed, 3.0 mins elapsed, rate=33.9k reads per second             ||
+||   14% completed, 3.1 mins elapsed, rate=34.5k reads per second             ||
+||   15% completed, 3.1 mins elapsed, rate=35.1k reads per second             ||
+||   15% completed, 3.2 mins elapsed, rate=35.7k reads per second             ||
+|| Start read mapping in chunk.                                               ||
+||   16% completed, 3.9 mins elapsed, rate=52.7k reads per second             ||
+||   23% completed, 4.8 mins elapsed, rate=51.9k reads per second             ||
+||   27% completed, 5.4 mins elapsed, rate=36.6k reads per second             ||
+||   28% completed, 5.6 mins elapsed, rate=36.4k reads per second             ||
+||   28% completed, 5.6 mins elapsed, rate=36.6k reads per second             ||
+||   29% completed, 5.7 mins elapsed, rate=37.0k reads per second             ||
+||   30% completed, 5.8 mins elapsed, rate=37.2k reads per second             ||
+||   30% completed, 5.9 mins elapsed, rate=37.3k reads per second             ||
+||   31% completed, 5.9 mins elapsed, rate=37.5k reads per second             ||
+||   31% completed, 6.0 mins elapsed, rate=37.7k reads per second             ||
+||   32% completed, 6.1 mins elapsed, rate=37.9k reads per second             ||
+||   32% completed, 6.1 mins elapsed, rate=38.1k reads per second             ||
+|| Start read mapping in chunk.                                               ||
+||   32% completed, 6.9 mins elapsed, rate=44.1k reads per second             ||
+||   39% completed, 7.7 mins elapsed, rate=46.3k reads per second             ||
+||   44% completed, 8.4 mins elapsed, rate=37.7k reads per second             ||
+||   44% completed, 8.5 mins elapsed, rate=37.7k reads per second             ||
+||   45% completed, 8.6 mins elapsed, rate=37.5k reads per second             ||
+||   45% completed, 8.8 mins elapsed, rate=37.3k reads per second             ||
+||   46% completed, 8.9 mins elapsed, rate=37.3k reads per second             ||
+||   46% completed, 9.0 mins elapsed, rate=37.3k reads per second             ||
+||   47% completed, 9.1 mins elapsed, rate=37.3k reads per second             ||
+||   47% completed, 9.2 mins elapsed, rate=37.3k reads per second             ||
+||   48% completed, 9.3 mins elapsed, rate=37.4k reads per second             ||
+|| Start read mapping in chunk.                                               ||
+||   49% completed,  10 mins elapsed, rate=41.1k reads per second             ||
+||   55% completed,  10 mins elapsed, rate=42.6k reads per second             ||
+||   60% completed,  11 mins elapsed, rate=37.4k reads per second             ||
+||   60% completed,  11 mins elapsed, rate=37.5k reads per second             ||
+||   61% completed,  11 mins elapsed, rate=37.7k reads per second             ||
+||   61% completed,  11 mins elapsed, rate=37.8k reads per second             ||
+||   62% completed,  11 mins elapsed, rate=37.9k reads per second             ||
+||   63% completed,  11 mins elapsed, rate=38.1k reads per second             ||
+||   63% completed,  11 mins elapsed, rate=38.2k reads per second             ||
+||   64% completed,  11 mins elapsed, rate=38.3k reads per second             ||
+||   64% completed,  11 mins elapsed, rate=38.4k reads per second             ||
+||   65% completed,  12 mins elapsed, rate=38.4k reads per second             ||
+|| Start read mapping in chunk.                                               ||
+||   66% completed,  12 mins elapsed, rate=41.6k reads per second             ||
+||   72% completed,  13 mins elapsed, rate=42.1k reads per second             ||
+||   77% completed,  14 mins elapsed, rate=37.6k reads per second             ||
+||   77% completed,  14 mins elapsed, rate=37.7k reads per second             ||
+||   78% completed,  14 mins elapsed, rate=37.8k reads per second             ||
+||   78% completed,  14 mins elapsed, rate=37.8k reads per second             ||
+||   79% completed,  14 mins elapsed, rate=37.9k reads per second             ||
+||   79% completed,  14 mins elapsed, rate=38.0k reads per second             ||
+||   80% completed,  15 mins elapsed, rate=38.0k reads per second             ||
+||   81% completed,  15 mins elapsed, rate=38.0k reads per second             ||
+||   81% completed,  15 mins elapsed, rate=38.1k reads per second             ||
+|| Start read mapping in chunk.                                               ||
+||   82% completed,  16 mins elapsed, rate=39.8k reads per second             ||
+||   89% completed,  17 mins elapsed, rate=39.7k reads per second             ||
+||   93% completed,  18 mins elapsed, rate=36.2k reads per second             ||
+||   94% completed,  18 mins elapsed, rate=36.2k reads per second             ||
+||   94% completed,  18 mins elapsed, rate=36.3k reads per second             ||
+||   95% completed,  18 mins elapsed, rate=36.3k reads per second             ||
+||   95% completed,  18 mins elapsed, rate=36.3k reads per second             ||
+||   96% completed,  18 mins elapsed, rate=36.2k reads per second             ||
+||   96% completed,  19 mins elapsed, rate=36.0k reads per second             ||
+||   97% completed,  19 mins elapsed, rate=35.8k reads per second             ||
+||   97% completed,  19 mins elapsed, rate=35.7k reads per second             ||
+|| Start read mapping in chunk.                                               ||
+||   98% completed,  20 mins elapsed, rate=36.5k reads per second             ||
+||   99% completed,  21 mins elapsed, rate=33.2k reads per second             ||
+||   99% completed,  21 mins elapsed, rate=33.2k reads per second             ||
+||   99% completed,  21 mins elapsed, rate=33.2k reads per second             ||
+||   99% completed,  21 mins elapsed, rate=33.3k reads per second             ||
+|| Sort the reads...                                                          ||
+||                                                                            ||
+||                           Completed successfully.                          ||
+||                                                                            ||
+\\====================================    ====================================//
+
+//================================   Summary =================================\\
+||                                                                            ||
+||                 Total reads : 42,492,535                                   ||
+||                      Mapped : 41,463,368 (97.6%)                           ||
+||             Uniquely mapped : 35,797,942                                   ||
+||               Multi-mapping : 5,665,426                                    ||
+||                                                                            ||
+||                    Unmapped : 1,029,167                                    ||
+||                                                                            ||
+||                   Junctions : 196,294                                      ||
+||                      Indels : 70,482                                       ||
+||                                                                            ||
+||                Running time : 26.4 minutes                                 ||
+||                                                                            ||
+\\============================================================================//
+
+42492535
+ 41463368
+ 0.97578
+─ Session info ───────────────────────────────────────────────────────────────
+  setting  value                       
+  version  R version 3.6.2 (2019-12-12)
+  os       Ubuntu 16.04.7 LTS          
+  system   x86_64, linux-gnu           
+  ui       X11                         
+  language (EN)                        
+  collate  en_US.UTF-8                 
+  ctype    en_US.UTF-8                 
+  tz       Europe/Zurich               
+  date     2020-10-06                  
+ 
+ ─ Packages ───────────────────────────────────────────────────────────────────
+  package     * version    date       lib source                        
+  assertthat    0.2.1      2019-03-21 [1] CRAN (R 3.6.1)                
+  backports     1.1.8      2020-06-17 [1] CRAN (R 3.6.2)                
+  callr         3.4.3      2020-03-28 [1] CRAN (R 3.6.2)                
+  cli           2.0.2      2020-02-28 [1] CRAN (R 3.6.2)                
+  crayon        1.3.4      2017-09-16 [1] CRAN (R 3.6.1)                
+  desc          1.2.0      2018-05-01 [1] CRAN (R 3.6.1)                
+  devtools      2.3.1      2020-07-21 [1] CRAN (R 3.6.2)                
+  digest        0.6.25     2020-02-23 [1] CRAN (R 3.6.2)                
+  ellipsis      0.3.1      2020-05-15 [1] CRAN (R 3.6.2)                
+  fansi         0.4.1      2020-01-08 [1] CRAN (R 3.6.2)                
+  fs            1.5.0      2020-07-31 [1] CRAN (R 3.6.2)                
+  glue          1.4.1      2020-05-13 [1] CRAN (R 3.6.2)                
+  magrittr      1.5        2014-11-22 [1] CRAN (R 3.6.1)                
+  memoise       1.1.0.9000 2020-05-06 [1] Github (r-lib/memoise@4aefd9f)
+  pkgbuild      1.1.0      2020-07-13 [1] CRAN (R 3.6.2)                
+  pkgload       1.1.0      2020-05-29 [1] CRAN (R 3.6.2)                
+  prettyunits   1.1.1      2020-01-24 [1] CRAN (R 3.6.2)                
+  processx      3.4.3      2020-07-05 [1] CRAN (R 3.6.2)                
+  ps            1.3.3      2020-05-08 [1] CRAN (R 3.6.2)                
+  R6            2.4.1      2019-11-12 [1] CRAN (R 3.6.1)                
+  remotes       2.2.0      2020-07-21 [1] CRAN (R 3.6.2)                
+  rlang         0.4.7      2020-07-09 [1] CRAN (R 3.6.2)                
+  rprojroot     1.3-2      2018-01-03 [1] CRAN (R 3.6.1)                
+  Rsubread    * 2.0.1      2020-01-27 [1] Bioconductor                  
+  sessioninfo   1.1.1      2018-11-05 [1] CRAN (R 3.6.1)                
+  testthat      2.3.2      2020-03-02 [1] CRAN (R 3.6.2)                
+  usethis       1.6.1      2020-04-29 [1] CRAN (R 3.6.2)                
+  withr         2.2.0      2020-04-20 [1] CRAN (R 3.6.2)                
+ 
+ [1] /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.6
+ [2] /usr/local/lib/R/site-library
+ [3] /usr/lib/R/site-library
+ [4] /usr/lib/R/library

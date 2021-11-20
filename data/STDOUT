@@ -1,0 +1,18 @@
+
+UNRAR 5.30 beta 2 freeware      Copyright (c) 1993-2015 Alexander Roshal
+
+
+Extracting from MSUS_RNAseq_files.rar
+
+Extracting  Cuffdiff output data.xlsx                                      0%  OK 
+Extracting  GroupA2_S2_L005_R1_001.fastq.gz                                0%  1%  2%
+Extracting  GroupA4_S4_L005_R1_001.fastq.gz                               15%
+Extracting  GroupA6_S6_L005_R1_001.fastq.gz                               32%
+Extracting  GroupB1_S1_L001_R1_001.fastq.gz                               49% 50% 51% 52% 53% 54% 55% 56% 57% 58% 59% 60% 61% 62% 63%  OK 
+Extracting  GroupB3_S3_L005_R1_001.fastq.gz                               63% 64% 65% 66% 67% 68% 69% 70% 71% 72% 73% 74% 75% 76% 77% 78% 79% 80%  OK 
+Extracting  GroupB5_S5_L005_R1_001.fastq.gz                               80% 81% 82% 83% 84% 85% 86% 87% 88% 89% 90% 91% 92% 93% 94% 95% 96% 97% 98% 99%  OK 
+Extracting  ProjectSettings.csv                                           99%  OK 
+Extracting  QC_S147.B532_Peca_RiboZero_260115.SE.RNASeqRibozero.RAPiD.Mouse.RNAQC.csv      99%  OK 
+Extracting  Summary_Sid_Run147_B532_Peca_RiboZero_260115.csv              99%  OK 
+Extracting  Unblinding code.txt                                           99%  OK 
+Total errors: 3

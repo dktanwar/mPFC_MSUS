@@ -1,0 +1,190 @@
+
+
+processing file: DTE_analysis.Rmd
+Setting options('download.file.method.GEOquery'='auto')
+Setting options('GEOquery.inmemory.gpl'=FALSE)
+Loading required package: mgcv
+Loading required package: nlme
+This is mgcv 1.8-31. For overview type 'help("mgcv-package")'.
+Loading required package: genefilter
+Loading required package: BiocParallel
+
+Attaching package: 'dplyr'
+
+The following object is masked from 'package:nlme':
+
+    collapse
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: 'patchwork'
+
+The following object is masked from 'package:genefilter':
+
+    area
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:parallel':
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from 'package:dplyr':
+
+    combine, intersect, setdiff, union
+
+The following object is masked from 'package:limma':
+
+    plotMA
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following objects are masked from 'package:dplyr':
+
+    first, rename
+
+The following object is masked from 'package:base':
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: 'IRanges'
+
+The following objects are masked from 'package:dplyr':
+
+    collapse, desc, slice
+
+The following object is masked from 'package:nlme':
+
+    collapse
+
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: 'matrixStats'
+
+The following objects are masked from 'package:Biobase':
+
+    anyMissing, rowMedians
+
+The following object is masked from 'package:dplyr':
+
+    count
+
+The following objects are masked from 'package:genefilter':
+
+    rowSds, rowVars
+
+
+Attaching package: 'DelayedArray'
+
+The following objects are masked from 'package:matrixStats':
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from 'package:base':
+
+    aperm, apply, rowsum
+
+output file: DTE_analysis.knit.md
+
+
+Output created: DTE_analysis.html
+Warning messages:
+1: replacing previous import 'GenomicRanges::shift' by 'data.table::shift' when loading 'plgINS' 
+2: MathJax doesn't work with self_contained when not using the rmarkdown "default" template. 
+...............                                                    |  25%
+label: DTE-analysis-2 (with options) 
+List of 2
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                              |....................                                                  |  29%
+  ordinary text without R code
+
+  |                                                                              |.......................                                               |  33%
+label: DTE-analysis-3
+  |                                                                              |..........................                                            |  38%
+  ordinary text without R code
+
+  |                                                                              |.............................                                         |  42%
+label: DTE-analysis-4
+  |                                                                              |................................                                      |  46%
+  ordinary text without R code
+
+  |                                                                              |...................................                                   |  50%
+label: DTE-analysis-5
+  |                                                                              |......................................                                |  54%
+  ordinary text without R code
+
+  |                                                                              |.........................................                             |  58%
+label: DTE-analysis-6
+  |                                                                              |............................................                          |  62%
+  ordinary text without R code
+
+  |                                                                              |...............................................                       |  67%
+label: DTE-analysis-7
+  |                                                                              |..................................................                    |  71%
+  ordinary text without R code
+
+  |                                                                              |....................................................                  |  75%
+label: DTE-analysis-8
+  |                                                                              |.......................................................               |  79%
+  ordinary text without R code
+
+  |                                                                              |..........................................................            |  83%
+label: DTE-analysis-10 (with options) 
+List of 2
+ $ fig.height: num 5
+ $ fig.width : num 11
+
+  |                                                                              |.............................................................         |  88%
+  ordinary text without R code
+
+  |                                                                              |................................................................      |  92%
+label: DTE-analysis-11
+  |                                                                              |...................................................................   |  96%
+  ordinary text without R code
+
+  |                                                                              |......................................................................| 100%
+label: DTE-analysis-12
+
+/home/ubuntu/softwares/anaconda3/bin/pandoc +RTS -K512m -RTS DTE_analysis.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output DTE_analysis.html --email-obfuscation none --self-contained --mathjax --variable 'mathjax-url:https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --variable 'readthedown:true' --variable 'lightbox:true' --variable 'thumbnails:true' --variable 'gallery:false' --standalone --section-divs --table-of-contents --toc-depth 2 --template /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.6/rmdformats/templates/template.html --highlight-style tango --variable 'theme:bootstrap' --include-in-header /mnt/IM/tmp//Rtmpi52qed/rmarkdown-str164772927505.html --lua-filter /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua --variable code_folding=show --variable code_menu=1 

@@ -1,0 +1,56 @@
+[2020-10-06 13:28:58.172] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2020-10-06 13:28:58.172] [jointLog] [info] parsing read library format
+[2020-10-06 13:28:58.172] [jointLog] [info] There is 1 library.
+[2020-10-06 13:28:58.699] [jointLog] [info] Loading Quasi index
+[2020-10-06 13:28:58.708] [jointLog] [info] Loading 32-bit quasi index
+[2020-10-06 13:31:51.196] [jointLog] [info] done
+[2020-10-06 13:31:51.196] [jointLog] [info] Index contained 135894 targets
+[2020-10-06 13:32:12.054] [jointLog] [warning] Fragment GC bias correction is currently *experimental* in single-end libraries.  Please use this option with caution.
+[2020-10-06 13:32:13.522] [jointLog] [info] Automatically detected most likely library type as U
+[2020-10-06 13:35:24.211] [jointLog] [info] Computed 211652 rich equivalence classes for further processing
+[2020-10-06 13:35:24.211] [jointLog] [info] Counted 35007830 total reads in the equivalence classes 
+[2020-10-06 13:35:24.267] [jointLog] [warning] 0.0193043% of fragments were shorter than the k used to build the index (31).
+If this fraction is too large, consider re-building the index with a smaller k.
+The minimum read size found was 30.
+
+
+[2020-10-06 13:35:24.268] [jointLog] [info] Mapping rate = 92.6899%
+
+[2020-10-06 13:35:24.268] [jointLog] [info] finished quantifyLibrary()
+[2020-10-06 13:35:24.273] [jointLog] [info] Starting optimizer
+[2020-10-06 13:35:24.399] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2020-10-06 13:35:24.409] [jointLog] [info] iteration = 0 | max rel diff. = 5439.04
+[2020-10-06 13:35:24.501] [jointLog] [info] iteration 11, adjusting effective lengths to account for biases
+[2020-10-06 13:35:24.212] [fileLog] [info] 
+At end of round 0
+==================
+Observed 37768751 total fragments (37768751 in most recent round)
+
+[2020-10-06 13:39:50.447] [jointLog] [info] Computed expected counts (for bias correction)
+[2020-10-06 13:39:50.451] [jointLog] [info] processed bias for 0.0% of the transcripts
+[2020-10-06 13:39:52.967] [jointLog] [info] processed bias for 10.0% of the transcripts
+[2020-10-06 13:39:54.618] [jointLog] [info] processed bias for 20.0% of the transcripts
+[2020-10-06 13:39:56.296] [jointLog] [info] processed bias for 30.0% of the transcripts
+[2020-10-06 13:39:57.924] [jointLog] [info] processed bias for 40.0% of the transcripts
+[2020-10-06 13:39:59.476] [jointLog] [info] processed bias for 50.0% of the transcripts
+[2020-10-06 13:40:01.142] [jointLog] [info] processed bias for 60.0% of the transcripts
+[2020-10-06 13:45:05.702] [jointLog] [info] processed bias for 100.0% of the transcripts
+[2020-10-06 13:45:06.367] [jointLog] [info] iteration = 100 | max rel diff. = 12.451
+[2020-10-06 13:45:07.026] [jointLog] [info] iteration = 200 | max rel diff. = 17.3341
+[2020-10-06 13:45:07.682] [jointLog] [info] iteration = 300 | max rel diff. = 2.64882
+[2020-10-06 13:45:08.591] [jointLog] [info] iteration = 400 | max rel diff. = 2.92305
+[2020-10-06 13:45:09.283] [jointLog] [info] iteration = 500 | max rel diff. = 17.6782
+[2020-10-06 13:45:09.974] [jointLog] [info] iteration = 600 | max rel diff. = 3.25771
+[2020-10-06 13:45:10.678] [jointLog] [info] iteration = 700 | max rel diff. = 0.720816
+[2020-10-06 13:45:11.413] [jointLog] [info] iteration = 800 | max rel diff. = 0.0829684
+[2020-10-06 13:45:12.118] [jointLog] [info] iteration = 900 | max rel diff. = 0.0774924
+[2020-10-06 13:45:12.809] [jointLog] [info] iteration = 1000 | max rel diff. = 0.0807629
+[2020-10-06 13:45:13.711] [jointLog] [info] iteration = 1100 | max rel diff. = 0.0251076
+[2020-10-06 13:45:14.789] [jointLog] [info] iteration = 1200 | max rel diff. = 0.0488006
+[2020-10-06 13:45:16.120] [jointLog] [info] iteration = 1300 | max rel diff. = 0.0325684
+[2020-10-06 13:45:17.350] [jointLog] [info] iteration = 1400 | max rel diff. = 0.0919653
+[2020-10-06 13:45:18.063] [jointLog] [info] iteration = 1500 | max rel diff. = 0.0452975
+[2020-10-06 13:45:18.361] [jointLog] [info] iteration = 1546 | max rel diff. = 0.00950761
+[2020-10-06 13:45:18.433] [jointLog] [info] Finished optimizer
+[2020-10-06 13:45:18.433] [jointLog] [info] writing output 
+

@@ -1,0 +1,184 @@
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 2.10
+single-core operation.
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /mnt/IM/DKT/MSUS/preprocessing/20200510-02_trimming/output/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> input/CTRL_S3_L005.fastq.gz <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Illumina	5551	AGATCGGAAGAGC	1000000	0.56
+smallRNA	12	TGGAATTCTCGG	1000000	0.00
+Nextera	7	CTGTCTCTTATA	1000000	0.00
+Using Illumina adapter for trimming (count: 5551). Second best hit was smallRNA (count: 12)
+
+Writing report to '/mnt/IM/DKT/MSUS/preprocessing/20200510-02_trimming/output/CTRL_S3_L005.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: input/CTRL_S3_L005.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.6
+Cutadapt version: 2.10
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 30 bp
+Removing Ns from the start and end of reads
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 2.10). Setting -j 1
+Writing final adapter and quality trimmed output to CTRL_S3_L005_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file input/CTRL_S3_L005.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+This is cutadapt 2.10 with Python 3.7.8
+Command line parameters: -j 1 -e 0.1 -q 30 -O 1 --trim-n -a AGATCGGAAGAGC input/CTRL_S3_L005.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 846.03 s (23 us/read; 2.57 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              36,225,903
+Reads with adapters:                11,785,851 (32.5%)
+Reads written (passing filters):    36,225,903 (100.0%)
+
+Total basepairs processed: 3,622,590,300 bp
+Quality-trimmed:              64,005,865 bp (1.8%)
+Total written (filtered):  3,512,225,465 bp (97.0%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 11785851 times
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 31.7%
+  C: 30.4%
+  G: 18.8%
+  T: 17.1%
+  none/other: 2.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	7827144	9056475.8	0	7827144
+2	2557401	2264118.9	0	2557401
+3	677892	566029.7	0	677892
+4	147269	141507.4	0	147269
+5	42726	35376.9	0	42726
+6	14467	8844.2	0	14467
+7	12868	2211.1	0	12868
+8	9253	552.8	0	9253
+9	10308	138.2	0	9490 818
+10	8765	34.5	1	7709 1056
+11	6474	8.6	1	5892 582
+12	6490	2.2	1	6245 245
+13	5981	0.5	1	5789 192
+14	5210	0.5	1	5050 160
+15	5424	0.5	1	5260 164
+16	4160	0.5	1	4021 139
+17	4409	0.5	1	4268 141
+18	4290	0.5	1	4072 218
+19	3288	0.5	1	3149 139
+20	3499	0.5	1	3334 165
+21	3063	0.5	1	2808 255
+22	2870	0.5	1	2718 152
+23	2324	0.5	1	2199 125
+24	2174	0.5	1	2075 99
+25	2303	0.5	1	2152 151
+26	1847	0.5	1	1682 165
+27	2008	0.5	1	1837 171
+28	2019	0.5	1	1909 110
+29	1562	0.5	1	1405 157
+30	1870	0.5	1	1618 252
+31	1428	0.5	1	1253 175
+32	1603	0.5	1	1416 187
+33	2112	0.5	1	1816 296
+34	2464	0.5	1	2127 337
+35	1327	0.5	1	990 337
+36	1346	0.5	1	1045 301
+37	1056	0.5	1	871 185
+38	1023	0.5	1	881 142
+39	917	0.5	1	804 113
+40	987	0.5	1	837 150
+41	903	0.5	1	673 230
+42	870	0.5	1	740 130
+43	698	0.5	1	506 192
+44	564	0.5	1	433 131
+45	698	0.5	1	481 217
+46	647	0.5	1	400 247
+47	757	0.5	1	619 138
+48	692	0.5	1	414 278
+49	772	0.5	1	500 272
+50	715	0.5	1	449 266
+51	656	0.5	1	424 232
+52	626	0.5	1	392 234
+53	668	0.5	1	401 267
+54	552	0.5	1	277 275
+55	739	0.5	1	342 397
+56	882	0.5	1	389 493
+57	739	0.5	1	426 313
+58	860	0.5	1	344 516
+59	1096	0.5	1	537 559
+60	1110	0.5	1	394 716
+61	1784	0.5	1	636 1148
+62	2098	0.5	1	825 1273
+63	3260	0.5	1	768 2492
+64	3805	0.5	1	2151 1654
+65	2507	0.5	1	1013 1494
+66	3760	0.5	1	2110 1650
+67	19522	0.5	1	16672 2850
+68	7168	0.5	1	3717 3451
+69	5101	0.5	1	1830 3271
+70	5993	0.5	1	1792 4201
+71	7541	0.5	1	2498 5043
+72	12705	0.5	1	2658 10047
+73	126259	0.5	1	4549 121710
+74	121538	0.5	1	53938 67600
+75	39960	0.5	1	29493 10467
+76	3875	0.5	1	2766 1109
+77	424	0.5	1	256 168
+78	120	0.5	1	55 65
+79	127	0.5	1	83 44
+80	505	0.5	1	458 47
+81	141	0.5	1	33 108
+82	69	0.5	1	16 53
+83	89	0.5	1	44 45
+84	283	0.5	1	215 68
+85	186	0.5	1	13 173
+86	53	0.5	1	19 34
+87	35	0.5	1	5 30
+88	63	0.5	1	18 45
+89	56	0.5	1	13 43
+90	51	0.5	1	18 33
+91	116	0.5	1	27 89
+92	93	0.5	1	33 60
+93	149	0.5	1	53 96
+94	218	0.5	1	120 98
+95	402	0.5	1	322 80
+96	292	0.5	1	234 58
+97	244	0.5	1	55 189
+98	234	0.5	1	57 177
+99	980	0.5	1	242 738
+100	5180	0.5	1	1438 3742
+
+RUN STATISTICS FOR INPUT FILE: input/CTRL_S3_L005.fastq.gz
+=============================================
+36225903 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 30 bp:	651552 (1.8%)
+

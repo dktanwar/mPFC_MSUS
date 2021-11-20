@@ -1,0 +1,184 @@
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 2.10
+single-core operation.
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /mnt/IM/DKT/MSUS/preprocessing/20200510-02_trimming/output/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> input/MSUS_S2_L005.fastq.gz <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Illumina	9335	AGATCGGAAGAGC	1000000	0.93
+smallRNA	16	TGGAATTCTCGG	1000000	0.00
+Nextera	8	CTGTCTCTTATA	1000000	0.00
+Using Illumina adapter for trimming (count: 9335). Second best hit was smallRNA (count: 16)
+
+Writing report to '/mnt/IM/DKT/MSUS/preprocessing/20200510-02_trimming/output/MSUS_S2_L005.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: input/MSUS_S2_L005.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.6
+Cutadapt version: 2.10
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 30 bp
+Removing Ns from the start and end of reads
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 2.10). Setting -j 1
+Writing final adapter and quality trimmed output to MSUS_S2_L005_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file input/MSUS_S2_L005.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+This is cutadapt 2.10 with Python 3.7.8
+Command line parameters: -j 1 -e 0.1 -q 30 -O 1 --trim-n -a AGATCGGAAGAGC input/MSUS_S2_L005.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 807.63 s (24 us/read; 2.55 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              34,328,883
+Reads with adapters:                11,386,508 (33.2%)
+Reads written (passing filters):    34,328,883 (100.0%)
+
+Total basepairs processed: 3,432,888,300 bp
+Quality-trimmed:              62,967,454 bp (1.8%)
+Total written (filtered):  3,314,760,765 bp (96.6%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 11386508 times
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 31.0%
+  C: 29.7%
+  G: 19.0%
+  T: 16.6%
+  none/other: 3.7%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	7376420	8582220.8	0	7376420
+2	2437092	2145555.2	0	2437092
+3	651311	536388.8	0	651311
+4	150583	134097.2	0	150583
+5	49949	33524.3	0	49949
+6	22168	8381.1	0	22168
+7	21015	2095.3	0	21015
+8	15078	523.8	0	15078
+9	15732	131.0	0	14920 812
+10	13900	32.7	1	12805 1095
+11	9927	8.2	1	9249 678
+12	10581	2.0	1	10242 339
+13	9738	0.5	1	9493 245
+14	8352	0.5	1	8111 241
+15	8544	0.5	1	8310 234
+16	6675	0.5	1	6466 209
+17	6977	0.5	1	6788 189
+18	6276	0.5	1	6056 220
+19	5051	0.5	1	4862 189
+20	5220	0.5	1	5022 198
+21	4365	0.5	1	4078 287
+22	4102	0.5	1	3929 173
+23	3551	0.5	1	3372 179
+24	3312	0.5	1	3175 137
+25	3452	0.5	1	3240 212
+26	2682	0.5	1	2461 221
+27	3001	0.5	1	2819 182
+28	2913	0.5	1	2780 133
+29	2172	0.5	1	2011 161
+30	2354	0.5	1	2161 193
+31	1771	0.5	1	1614 157
+32	2009	0.5	1	1888 121
+33	1501	0.5	1	1348 153
+34	1718	0.5	1	1577 141
+35	1475	0.5	1	1300 175
+36	1498	0.5	1	1378 120
+37	1268	0.5	1	1125 143
+38	1339	0.5	1	1172 167
+39	1349	0.5	1	1127 222
+40	1378	0.5	1	1160 218
+41	1382	0.5	1	1078 304
+42	1152	0.5	1	997 155
+43	865	0.5	1	709 156
+44	710	0.5	1	566 144
+45	735	0.5	1	617 118
+46	881	0.5	1	620 261
+47	928	0.5	1	783 145
+48	887	0.5	1	613 274
+49	940	0.5	1	655 285
+50	924	0.5	1	614 310
+51	881	0.5	1	637 244
+52	809	0.5	1	546 263
+53	862	0.5	1	544 318
+54	686	0.5	1	400 286
+55	958	0.5	1	534 424
+56	1054	0.5	1	560 494
+57	1049	0.5	1	665 384
+58	1028	0.5	1	490 538
+59	1245	0.5	1	658 587
+60	1470	0.5	1	641 829
+61	2108	0.5	1	912 1196
+62	2410	0.5	1	1119 1291
+63	3536	0.5	1	1168 2368
+64	6180	0.5	1	4362 1818
+65	3205	0.5	1	1465 1740
+66	5052	0.5	1	3283 1769
+67	8019	0.5	1	5161 2858
+68	10361	0.5	1	7123 3238
+69	7041	0.5	1	3391 3650
+70	7587	0.5	1	2834 4753
+71	9494	0.5	1	4378 5116
+72	14822	0.5	1	4307 10515
+73	148165	0.5	1	8093 140072
+74	178292	0.5	1	107693 70599
+75	62651	0.5	1	49923 12728
+76	6917	0.5	1	5131 1786
+77	979	0.5	1	680 299
+78	254	0.5	1	160 94
+79	124	0.5	1	73 51
+80	400	0.5	1	339 61
+81	126	0.5	1	34 92
+82	95	0.5	1	28 67
+83	112	0.5	1	39 73
+84	359	0.5	1	262 97
+85	312	0.5	1	34 278
+86	86	0.5	1	32 54
+87	70	0.5	1	30 40
+88	90	0.5	1	32 58
+89	60	0.5	1	28 32
+90	70	0.5	1	35 35
+91	147	0.5	1	42 105
+92	146	0.5	1	60 86
+93	196	0.5	1	88 108
+94	373	0.5	1	275 98
+95	782	0.5	1	714 68
+96	413	0.5	1	346 67
+97	228	0.5	1	89 139
+98	243	0.5	1	87 156
+99	1116	0.5	1	421 695
+100	6642	0.5	1	2677 3965
+
+RUN STATISTICS FOR INPUT FILE: input/MSUS_S2_L005.fastq.gz
+=============================================
+34328883 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 30 bp:	751530 (2.2%)
+

@@ -1,0 +1,116 @@
+
+
+processing file: dupRadar_analysis.Rmd
+output file: dupRadar_analysis.knit.md
+
+
+Output created: dupRadar_analysis.html
+Warning messages:
+1: `select_()` is deprecated as of dplyr 0.7.0.
+Please use `select()` instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+2: `filter_()` is deprecated as of dplyr 0.7.0.
+Please use `filter()` instead.
+See vignette('programming') for more help
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+3: MathJax doesn't work with self_contained when not using the rmarkdown "default" template. 
+                                                    |........                                                              |  12%
+  ordinary text without R code
+
+  |                                                                              |...........                                                           |  15%
+label: dupRadar-analysis-2
+  |                                                                              |.............                                                         |  19%
+  ordinary text without R code
+
+  |                                                                              |................                                                      |  23%
+label: dupRadar-analysis-3
+  |                                                                              |...................                                                   |  27%
+  ordinary text without R code
+
+  |                                                                              |......................                                                |  31%
+label: dupRadar-analysis-4
+  |                                                                              |........................                                              |  35%
+  ordinary text without R code
+
+  |                                                                              |...........................                                           |  38%
+label: dupRadar-analysis-5 (with options) 
+List of 4
+ $ results   : chr "asis"
+ $ fig.align : chr "center"
+ $ fig.width : num 7
+ $ fig.height: num 7
+
+  |                                                                              |..............................                                        |  42%
+  ordinary text without R code
+
+  |                                                                              |................................                                      |  46%
+label: dupRadar-analysis-6 (with options) 
+List of 4
+ $ results   : chr "asis"
+ $ fig.align : chr "center"
+ $ fig.width : num 8
+ $ fig.height: num 7
+
+  |                                                                              |...................................                                   |  50%
+  ordinary text without R code
+
+  |                                                                              |......................................                                |  54%
+label: dupRadar-analysis-7 (with options) 
+List of 4
+ $ results   : chr "asis"
+ $ fig.align : chr "center"
+ $ fig.width : num 8
+ $ fig.height: num 7
+
+  |                                                                              |........................................                              |  58%
+  ordinary text without R code
+
+  |                                                                              |...........................................                           |  62%
+label: dupRadar-analysis-8 (with options) 
+List of 4
+ $ results   : chr "asis"
+ $ fig.align : chr "center"
+ $ fig.width : num 7
+ $ fig.height: num 7
+
+  |                                                                              |..............................................                        |  65%
+  ordinary text without R code
+
+  |                                                                              |................................................                      |  69%
+label: dupRadar-analysis-9 (with options) 
+List of 4
+ $ results   : chr "asis"
+ $ fig.align : chr "center"
+ $ fig.width : num 7
+ $ fig.height: num 7
+
+  |                                                                              |...................................................                   |  73%
+  ordinary text without R code
+
+  |                                                                              |......................................................                |  77%
+label: dupRadar-analysis-10
+  |                                                                              |.........................................................             |  81%
+  ordinary text without R code
+
+  |                                                                              |...........................................................           |  85%
+label: dupRadar-analysis-11 (with options) 
+List of 4
+ $ fig.align : chr "center"
+ $ fig.width : num 10
+ $ fig.height: num 7
+ $ results   : chr "asis"
+
+  |                                                                              |..............................................................        |  88%
+  ordinary text without R code
+
+  |                                                                              |.................................................................     |  92%
+label: dupRadar-analysis-12
+  |                                                                              |...................................................................   |  96%
+  ordinary text without R code
+
+  |                                                                              |......................................................................| 100%
+label: dupRadar-analysis-13
+
+/home/ubuntu/softwares/anaconda3/bin/pandoc +RTS -K512m -RTS dupRadar_analysis.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output dupRadar_analysis.html --email-obfuscation none --self-contained --mathjax --variable 'mathjax-url:https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --variable 'readthedown:true' --variable 'lightbox:true' --variable 'thumbnails:true' --variable 'gallery:false' --standalone --section-divs --table-of-contents --toc-depth 2 --template /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.6/rmdformats/templates/template.html --highlight-style tango --variable 'theme:bootstrap' --include-in-header /mnt/IM/tmp//Rtmpval200/rmarkdown-str6eb5511f2182.html --lua-filter /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua --variable code_folding=hide --variable code_menu=1 

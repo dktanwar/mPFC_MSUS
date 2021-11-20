@@ -1,0 +1,7 @@
+Lane,	Sample ID,	Sample Ref,	Index,	Description,	Control,	Project,	Yield (Mbases),	% PF,	# Reads,	% of raw clusters per lane,	% Perfect Index Reads,	% One Mismatch Reads (Index),	% of >= Q30 Bases (PF),	Mean Quality Score (PF)
+5,1,Mus_musculus_-_cDNA_Library,CACGAT,RiboZero_RNA_Sequencing_from_RNA,N,B532_Peca_RiboZero_260115,2880,100.00,28797447,12.98,99.05,0.95,95.28,36.59
+5,2,Mus_musculus_-_cDNA_Library,AGTCAA,RiboZero_RNA_Sequencing_from_RNA,N,B532_Peca_RiboZero_260115,3433,100.00,34328883,15.48,99.01,0.99,95.47,36.60
+5,3,Mus_musculus_-_cDNA_Library,TCATTC,RiboZero_RNA_Sequencing_from_RNA,N,B532_Peca_RiboZero_260115,3623,100.00,36225903,16.33,99.02,0.98,95.50,36.62
+5,4,Mus_musculus_-_cDNA_Library,CTAGCT,RiboZero_RNA_Sequencing_from_RNA,N,B532_Peca_RiboZero_260115,3505,100.00,35048465,15.80,99.18,0.82,95.30,36.56
+5,5,Mus_musculus_-_cDNA_Library,GTGAAA,RiboZero_RNA_Sequencing_from_RNA,N,B532_Peca_RiboZero_260115,4318,100.00,43178328,19.47,98.98,1.02,95.41,36.59
+5,6,Mus_musculus_-_cDNA_Library,TGACCA,RiboZero_RNA_Sequencing_from_RNA,N,B532_Peca_RiboZero_260115,3813,100.00,38134341,17.19,98.83,1.17,95.69,36.69
